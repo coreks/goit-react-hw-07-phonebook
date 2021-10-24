@@ -9,7 +9,7 @@ import s from '../Form/Form.module.css';
 function Form() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  const contacts = useSelector(selectors.getItems);
+  const contacts = useSelector(selectors.getContacts);
   const dispatch = useDispatch();
 
   const nameInputId = shortid.generate();
